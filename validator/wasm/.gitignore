@@ -1,7 +1,0 @@
-# Build artifacts
-target/
-Cargo.lock
-
-# IDE
-.idea/
-*.swp

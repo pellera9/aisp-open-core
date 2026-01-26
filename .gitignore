@@ -14,7 +14,27 @@ pkg/
 !validator/wasm/aisp.wasm
 
 # ═══════════════════════════════════════════════════════════════
-# Archived versioning 
+# Local-only files (not for public repo)
+# ═══════════════════════════════════════════════════════════════
+LOCAL-DECISIONS.md
+LOCAL-*.md
+plans/
+
+# ═══════════════════════════════════════════════════════════════
+# Test files (exclude verbose internal tests, keep public examples)
+# ═══════════════════════════════════════════════════════════════
+# Exclude internal verbose test files
+**/tests/fixtures/
+**/tests/*.internal.test.ts
+**/tests/*.benchmark.ts
+**/tests/__snapshots__/
+# Keep only these test files for public repo:
+# - e2e.test.ts (comprehensive E2E examples)
+# - rosetta.test.ts (Rosetta Stone mapping tests)
+# Other test files are internal development tests
+
+# ═══════════════════════════════════════════════════════════════
+# Archived versioning
 # ═══════════════════════════════════════════════════════════════
 .archive/
 
